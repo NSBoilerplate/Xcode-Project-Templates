@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Name</key>
+	<string>NSBoilerplate Application</string>
+	
+	<key>Description</key>
+	<string>This template provides a starting point for an application using NSBoilerplate. See http://nsboilerplate.com for full details.</string>
+	
+	<key>Identifier</key>
+	<string>com.nsboilerplate.template.project.ios</string>
+	
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	
+	<key>Ancestors</key>
+	<array>
+		<string>com.nsboilerplate.template.project.CocoaPods</string>
+		<string>com.apple.dt.unit.objectiveCApplication</string>
+		<string>com.apple.dt.unit.iPhoneBase</string>
+		<string>com.apple.dt.unit.prefixable</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	
+	<key>Definitions</key>
+	<dict>
+		<key>.gitignore</key>
+		<dict>
+			<key>Path</key>
+			<string>gitignore</string>
+		</dict>
+	</dict>
+	<key>Nodes</key>
+	<array>
+		<string>../.gitignore</string>
+	</array>
+	<key>Options</key>
+	<array>
+		
+		<dict>
+		    <!-- Ask to include Kiwi setup -->
+			<key>Default</key>
+			<string>true</string>
+			<key>Description</key>
+			<string>Whether the new project should integrate Kiwi</string>
+			<key>Identifier</key>
+			<string>useNSBoilerplateKiwi</string>
+			<key>Name</key>
+			<string>Include Kiwi Unit Testing</string>
+			<key>SortOrder</key>
+			<integer>2147483647</integer>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Units</key>
+			<dict>
+				<key>false</key>
+				<array>
+				    <!-- nothing -->
+				</array>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>../Podfile:nsboilerplatekiwi</key>
+							<string>
+							3
+target :KiwiTests, :exclusive => true do
+    pod 'Kiwi'
+    pod 'AFHTTPRequestOperationLogger'
+end
+							</string>
+						</dict>
+                        <key>Nodes</key>
+                        <array>
+                            <string>../Podfile:nsboilerplatekiwi</string>
+                        </array>
+						<key>Components</key>
+						<array>
+							<dict>
+								<key>Identifier</key>
+								<string>com.nsboilerplate.template.project.KiwiTestsBundle</string>
+								<key>Name</key>
+								<string>KiwiTests</string>
+							</dict>
+						</array>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+
+
+		<dict>
+			<!-- Ask to include KIF setup -->
+
+			<key>Default</key>
+			<string>true</string>
+			<key>Description</key>
+			<string>Whether the new project should integrate KIF</string>
+			<key>Identifier</key>
+			<string>useNSBoilerplateKIF</string>
+			<key>Name</key>
+			<string>Include User Interface Testing</string>
+			<key>SortOrder</key>
+			<integer>2147483647</integer>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Units</key>
+			<dict>
+				<key>false</key>
+				<array>
+				</array>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>../Podfile:nsboilerplatekif</key>
+							<string>
+target :KIFTests, :exclusive => false do
+    pod 'KIF'
+end
+							</string>
+            			</dict>
+						<key>Nodes</key>
+						<array>
+							<string>../Podfile:nsboilerplatekif</string>
+						</array>
+						<key>Components</key>
+						<array>
+							<dict>
+								<key>Identifier</key>
+								<string>com.nsboilerplate.template.project.KIFTestsBundle</string>
+								<key>Name</key>
+								<string>___PACKAGENAME___KIFTests</string>
+							</dict>
+						</array>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+
+
+	</array>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	
+</dict>
+</plist>

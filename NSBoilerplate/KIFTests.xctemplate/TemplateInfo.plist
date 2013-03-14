@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.nsboilerplate.template.project.KIFTestsBundle</string>
+	
+	<key>Name</key>
+	<string>KIF Tests</string>
+	
+	<key>Description</key>
+	<string>NSBoilerplate KIF template.</string>
+	
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	
+	<key>Ancestors</key>
+	<array>
+			<string>com.apple.dt.unit.iPhoneBase</string>
+	</array>
+	
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>useNSBoilerplateKIF</string>
+			<key>Units</key>
+			<dict>
+				<key>false</key>
+				<array>
+				</array>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>KIFTests/BPUITestController.h</key>
+                            <dict>
+                                <key>Path</key>                            
+                                <string>BPUITestController.h</string>                            
+                            </dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>KIFTests/BPUITestController.h</string>
+						</array>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
