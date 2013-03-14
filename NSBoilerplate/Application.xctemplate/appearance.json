@@ -1,0 +1,32 @@
+{
+    "Variables": {
+        "tint":"#022944"
+    },
+    "UITabBar": {
+        "tintColor": "$tint",
+        "selectedImageTintColor": "red",
+        "UITabBarItem": {
+            "titleTextAttributes:normal": {
+                "textColor": "lightGray"
+            },
+            "titleTextAttributes:selected": {
+                "textColor": "white"
+            }
+        }
+    },
+    "UINavigationBar": {
+        "tintColor": "$tint"
+    },
+    "UISSDemoFirstViewController": {
+        "UIButton": {
+            "backgroundImage:normal": ["button-background-normal", [0,10,0,10]],
+            "backgroundImage:highlighted": ["button-background-highlighted", [0,10,0,10]],
+            "titleColor:normal": ["white", 0.8],
+            "titleColor:highlighted": "white",
+            "titleEdgeInsets": [1,0,0,0],
+            "UILabel": {
+                "font": ["Copperplate-Bold", 18]
+            }
+        }
+    }
+}

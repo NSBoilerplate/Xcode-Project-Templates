@@ -35,12 +35,157 @@
 		<dict>
 			<key>Path</key>
 			<string>gitignore</string>
+		</dict>		
+		<key>*:implementation:initSection:initViewController</key>
+		<dict>
+			<key>Beginning</key>
+			<string>- (void)awakeFromNib
+{</string>
+			<key>End</key>
+			<string>    [super awakeFromNib];
+}
+</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>	
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions</key>
+		<dict>
+			<key>Beginning</key>
+			<string>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // Override point for customization after application launch.</string>
+			<key>End</key>
+			<string>    return YES;
+}
+</string>
 		</dict>
-	</dict>
+		<key>Indent</key>
+		<integer>1</integer>
+		<key>___PACKAGENAME___-Info.plist:UIMainStoryboardFile</key>
+		<string>&lt;key&gt;UIMainStoryboardFile&lt;/key&gt;
+&lt;string&gt;MainStoryboard_iPhone&lt;/string&gt;
+&lt;key&gt;UIMainStoryboardFile~ipad&lt;/key&gt;
+&lt;string&gt;MainStoryboard_iPad&lt;/string&gt;</string>
+		<key>en.lproj/MainStoryboard_iPad.storyboard</key>
+		<dict>
+			<key>Path</key>
+			<string>MainStoryboard_iPad.storyboard</string>
+		</dict>
+		<key>en.lproj/MainStoryboard_iPhone.storyboard</key>
+		<dict>
+			<key>Path</key>
+			<string>MainStoryboard_iPhone.storyboard</string>
+		</dict>
+		<key>Default-568h@2x.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Default-568h@2x.png</string>
+		</dict>
+		<key>Default.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Default.png</string>
+		</dict>
+		<key>Default@2x.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Default@2x.png</string>
+		</dict>
+		<key>Icon_base@2x.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Icon_base@2x.png</string>
+		</dict>
+		<key>Icon_base.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Icon_base.png</string>
+		</dict>
+		<key>Icon-72@2x.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Icon-72@2x.png</string>
+		</dict>
+		<key>Icon-72.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Icon-72.png</string>
+		</dict>
+		<key>Icon-Small-50@2x.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Icon-Small-50@2x.png</string>
+		</dict>
+		<key>Icon-Small-50.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Icon-Small-50.png</string>
+		</dict>
+		<key>Icon-small@2x.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Icon-small@2x.png</string>
+		</dict>
+		<key>Icon-small.png</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>Icon-small.png</string>
+		</dict>
+		<key>appearance.json</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Path</key>
+			<string>appearance.json</string>
+		</dict>
+	</dict>	
+	
 	<key>Nodes</key>
 	<array>
 		<string>../.gitignore</string>
+		<string>___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability:5</string>
+		<string>___PACKAGENAME___-Info.plist:UIMainStoryboardFile</string>
+		<string>en.lproj/MainStoryboard_iPhone.storyboard</string>
+		<string>en.lproj/MainStoryboard_iPad.storyboard</string>
+		<string>Default.png</string>
+		<string>Default@2x.png</string>
+		<string>Default-568h@2x.png</string>
+		<string>Default-568h@2x.png</string>
+		<string>Default.png</string>
+		<string>Default@2x.png</string>
+		<string>Icon_base@2x.png</string>
+		<string>Icon_base.png</string>
+		<string>Icon-72@2x.png</string>
+		<string>Icon-72.png</string>
+		<string>Icon-Small-50@2x.png</string>
+		<string>Icon-Small-50.png</string>
+		<string>Icon-small@2x.png</string>
+		<string>Icon-small.png</string>
+		<string>appearance.json</string>
 	</array>
+	
 	<key>Options</key>
 	<array>
 		
