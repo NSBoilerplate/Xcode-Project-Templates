@@ -45,6 +45,56 @@
 	<array>
 		
 		<dict>
+			<!-- Ask to include KIF setup -->
+			<key>Default</key>
+			<string>true</string>
+			<key>Description</key>
+			<string>Whether the new project should integrate KIF</string>
+			<key>Identifier</key>
+			<string>useNSBoilerplateKIF</string>
+			<key>Name</key>
+			<string>Include User Interface Testing</string>
+			<key>SortOrder</key>
+			<integer>2147483647</integer>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Units</key>
+			<dict>
+				<key>false</key>
+				<array>
+				</array>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>../Podfile:kif</key>
+							<string>
+target :KIFTests, :exclusive => false do
+    pod 'KIF'
+end
+							</string>
+            			</dict>
+						<key>Nodes</key>
+						<array>
+							<string>../Podfile:kif</string>
+						</array>
+						<key>Components</key>
+						<array>
+							<dict>
+								<key>Identifier</key>
+								<string>com.nsboilerplate.template.project.KIFTestsBundle</string>
+								<key>Name</key>
+								<string>KIFTests</string>
+							</dict>
+						</array>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+
+
+<dict>
 		    <!-- Ask to include Kiwi setup -->
 			<key>Default</key>
 			<string>true</string>
@@ -69,9 +119,8 @@
 					<dict>
 						<key>Definitions</key>
 						<dict>
-							<key>../Podfile:nsboilerplatekiwi</key>
+							<key>../Podfile:kiwi</key>
 							<string>
-							3
 target :KiwiTests, :exclusive => true do
     pod 'Kiwi'
     pod 'AFHTTPRequestOperationLogger'
@@ -80,7 +129,7 @@ end
 						</dict>
                         <key>Nodes</key>
                         <array>
-                            <string>../Podfile:nsboilerplatekiwi</string>
+                            <string>../Podfile:kiwi</string>
                         </array>
 						<key>Components</key>
 						<array>
@@ -89,57 +138,6 @@ end
 								<string>com.nsboilerplate.template.project.KiwiTestsBundle</string>
 								<key>Name</key>
 								<string>KiwiTests</string>
-							</dict>
-						</array>
-					</dict>
-				</array>
-			</dict>
-		</dict>
-
-
-		<dict>
-			<!-- Ask to include KIF setup -->
-
-			<key>Default</key>
-			<string>true</string>
-			<key>Description</key>
-			<string>Whether the new project should integrate KIF</string>
-			<key>Identifier</key>
-			<string>useNSBoilerplateKIF</string>
-			<key>Name</key>
-			<string>Include User Interface Testing</string>
-			<key>SortOrder</key>
-			<integer>2147483647</integer>
-			<key>Type</key>
-			<string>checkbox</string>
-			<key>Units</key>
-			<dict>
-				<key>false</key>
-				<array>
-				</array>
-				<key>true</key>
-				<array>
-					<dict>
-						<key>Definitions</key>
-						<dict>
-							<key>../Podfile:nsboilerplatekif</key>
-							<string>
-target :KIFTests, :exclusive => false do
-    pod 'KIF'
-end
-							</string>
-            			</dict>
-						<key>Nodes</key>
-						<array>
-							<string>../Podfile:nsboilerplatekif</string>
-						</array>
-						<key>Components</key>
-						<array>
-							<dict>
-								<key>Identifier</key>
-								<string>com.nsboilerplate.template.project.KIFTestsBundle</string>
-								<key>Name</key>
-								<string>___PACKAGENAME___KIFTests</string>
 							</dict>
 						</array>
 					</dict>

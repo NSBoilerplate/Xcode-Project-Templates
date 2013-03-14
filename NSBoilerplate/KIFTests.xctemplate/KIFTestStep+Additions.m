@@ -1,15 +1,15 @@
 //
-//  KIFTestStep+BPAdditions.m
-//  Boilerplate
+//  ___FILENAME___
+//  ___PROJECTNAME___
 //
-//  Created by Jeffrey Sambells on 2013-03-04.
-//  Copyright (c) 2013 Boilerplate. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//___COPYRIGHT___
 //
 
-#import "KIFTestStep+BPAdditions.h"
-#import "BPAppDelegate.h"
+#import "KIFTestStep+___VARIABLE_classPrefix:identifier___Additions.h"
+#import "___VARIABLE_classPrefix:identifier___AppDelegate.h"
 
-@implementation KIFTestStep (BPAdditions)
+@implementation KIFTestStep (___VARIABLE_classPrefix:identifier___Additions)
 
 #pragma mark - Factory Steps
 
@@ -18,7 +18,7 @@
     return [KIFTestStep stepWithDescription:@"Reset the application state." executionBlock:^(KIFTestStep *step, NSError **error) {
         BOOL successfulReset = YES;
         
-        BPAppDelegate *delegate =  [UIApplication sharedApplication].delegate;
+        ___VARIABLE_classPrefix:identifier___AppDelegate *delegate =  [UIApplication sharedApplication].delegate;
         
         // Do the actual reset for your app. Set successfulReset = NO if it fails.
         [delegate setAuthenticated:NO];
@@ -35,7 +35,7 @@
 {
     NSMutableArray *steps = [NSMutableArray array];
 
-    BPAppDelegate *delegate =  [UIApplication sharedApplication].delegate;
+    ___VARIABLE_classPrefix:identifier___AppDelegate *delegate =  [UIApplication sharedApplication].delegate;
     
     // Do the actual reset for your app. Set successfulReset = NO if it fails.
     [delegate setAuthenticated:NO];

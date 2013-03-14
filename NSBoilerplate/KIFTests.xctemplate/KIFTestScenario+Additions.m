@@ -1,15 +1,15 @@
 //
-//  KIFTestScenario+BPAdditions.m
-//  Boilerplate
+//  ___FILENAME___
+//  ___PROJECTNAME___
 //
-//  Created by Jeffrey Sambells on 2013-03-04.
-//  Copyright (c) 2013 Boilerplate. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//___COPYRIGHT___
 //
 
-#import "KIFTestScenario+BPAdditions.h"
-#import "KIFTestStep+BPAdditions.h"
+#import "KIFTestScenario+___VARIABLE_classPrefix:identifier___Additions.h"
+#import "KIFTestStep+___VARIABLE_classPrefix:identifier___Additions.h"
 
-@implementation KIFTestScenario (BPAdditions)
+@implementation KIFTestScenario (___VARIABLE_classPrefix:identifier___Additions)
 
 
 + (id)scenarioToLogIn;

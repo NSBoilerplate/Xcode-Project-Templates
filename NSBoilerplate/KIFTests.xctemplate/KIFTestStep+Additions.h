@@ -1,14 +1,14 @@
 //
-//  KIFTestStep+BPAdditions.h
-//  Boilerplate
+//  ___FILENAME___
+//  ___PROJECTNAME___
 //
-//  Created by Jeffrey Sambells on 2013-03-04.
-//  Copyright (c) 2013 Boilerplate. All rights reserved.
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//___COPYRIGHT___
 //
 
 #import "KIFTestStep.h"
 
-@interface KIFTestStep (BPAdditions)
+@interface KIFTestStep (___VARIABLE_classPrefix:identifier___Additions)
 
 // Factory Steps
 
