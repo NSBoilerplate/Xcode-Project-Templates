@@ -35,7 +35,223 @@
 		<dict>
 			<key>Path</key>
 			<string>gitignore</string>
-		</dict>		
+		</dict>	
+		<key>*:implementation:didReceiveMemoryWarning</key>
+		<dict>
+			<key>Beginning</key>
+			<string>- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.</string>
+			<key>End</key>
+			<string>}
+</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>*:implementation:viewDidLoad</key>
+		<dict>
+			<key>Beginning</key>
+			<string>- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.</string>
+			<key>End</key>
+			<string>}
+</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>*:viewControllerInterface</key>
+		<dict>
+			<key>Beginning</key>
+			<string>//
+//  ___FILENAME___
+//  ___PACKAGENAME___
+//
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//___COPYRIGHT___
+//
+
+#import &lt;UIKit/UIKit.h&gt;
+
+@interface ___FILEBASENAME___ : UIViewController
+</string>
+			<key>End</key>
+			<string>@end</string>
+		</dict>
+		<key>___PACKAGENAME___-Info.plist:iPhone</key>
+		<string>&lt;key&gt;CFBundleDisplayName&lt;/key&gt;
+&lt;string&gt;${PRODUCT_NAME}&lt;/string&gt;
+&lt;key&gt;CFBundleVersion&lt;/key&gt;
+&lt;string&gt;1.0&lt;/string&gt;
+&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;
+&lt;string&gt;1.0&lt;/string&gt;
+&lt;key&gt;LSRequiresIPhoneOS&lt;/key&gt;
+&lt;true/&gt;
+&lt;key&gt;UIRequiredDeviceCapabilities&lt;/key&gt;
+&lt;array&gt;
+	&lt;string&gt;armv7&lt;/string&gt;
+&lt;/array&gt;</string>
+		<key>___PACKAGENAME___-Info.plist:statusBarTintForNavBar</key>
+		<string>&lt;key&gt;UIStatusBarTintParameters&lt;/key&gt;
+&lt;dict&gt;
+    &lt;key&gt;UINavigationBar&lt;/key&gt;
+    &lt;dict&gt;
+        &lt;key&gt;Style&lt;/key&gt;
+        &lt;string&gt;UIBarStyleDefault&lt;/string&gt;
+        &lt;key&gt;Translucent&lt;/key&gt;
+        &lt;false/&gt;
+    &lt;/dict&gt;
+&lt;/dict&gt;
+</string>
+		<key>___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability:*</key>
+		<string>#import &lt;Availability.h&gt;
+
+#ifndef __IPHONE____*____0
+#warning "This project uses features only available in iOS SDK ___*___.0 and later."
+#endif
+</string>
+		<key>___PACKAGENAME___.entitlements</key>
+		<dict>
+			<key>Beginning</key>
+			<string>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist version="1.0"&gt;
+&lt;dict&gt;
+            </string>
+			<key>End</key>
+			<string>&lt;/dict&gt;
+&lt;/plist&gt;
+            </string>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>___PACKAGENAME___.entitlements:dataProtectionClass</key>
+		<string>&lt;key&gt;DataProtectionClass&lt;/key&gt;
+&lt;string&gt;NSFileProtectionComplete&lt;/string&gt;
+        </string>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.h:ivars</key>
+		<dict>
+			<key>Beginning</key>
+			<string>@interface ___VARIABLE_classPrefix:identifier___AppDelegate : UIResponder &lt;UIApplicationDelegate&gt;
+</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:window</key>
+		<string>@property (strong, nonatomic) UIWindow *window;
+</string>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m</key>
+		<dict>
+			<key>End</key>
+			<string>@end</string>
+		</dict>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationDidBecomeActive</key>
+		<dict>
+			<key>Beginning</key>
+			<string>- (void)applicationDidBecomeActive:(UIApplication *)application
+{</string>
+			<key>End</key>
+			<string>}
+</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationDidBecomeActive:comments</key>
+		<string>// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+</string>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationDidEnterBackground</key>
+		<dict>
+			<key>Beginning</key>
+			<string>- (void)applicationDidEnterBackground:(UIApplication *)application
+{</string>
+			<key>End</key>
+			<string>}
+</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationDidEnterBackground:comments</key>
+		<string>// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+// If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+</string>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationLifecycle</key>
+		<string>- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application
+{
+    // Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
+}
+
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+     // If your application supports background execution, called instead of applicationWillTerminate: when the user quits.
+}
+
+- (void)applicationWillEnterForeground:(UIApplication *)application
+{
+     // Called as part of transition from the background to the inactive state: here you can undo many of the changes made on entering the background.
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+}
+</string>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillEnterForeground</key>
+		<dict>
+			<key>Beginning</key>
+			<string>- (void)applicationWillEnterForeground:(UIApplication *)application
+{</string>
+			<key>End</key>
+			<string>}
+</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillEnterForeground:comments</key>
+		<string>// Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+</string>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillResignActive</key>
+		<dict>
+			<key>Beginning</key>
+			<string>- (void)applicationWillResignActive:(UIApplication *)application
+{</string>
+			<key>End</key>
+			<string>}
+</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillResignActive:comments</key>
+		<string>// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+// Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+</string>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillTerminate</key>
+		<dict>
+			<key>Beginning</key>
+			<string>- (void)applicationWillTerminate:(UIApplication *)application
+{</string>
+			<key>End</key>
+			<string>}
+</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillTerminate:comments</key>
+		<string>// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+</string>
+		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation</key>
+		<string>@implementation ___VARIABLE_classPrefix:identifier___AppDelegate
+</string>
+		<key>main.m:main:UIApplicationMain</key>
+		<string>@autoreleasepool {
+    return UIApplicationMain(argc, argv, nil, NSStringFromClass([___VARIABLE_classPrefix:identifier___AppDelegate class]));
+}
+</string>
+		
 		<key>*:implementation:initSection:initViewController</key>
 		<dict>
 			<key>Beginning</key>
@@ -165,8 +381,34 @@
 	<key>Nodes</key>
 	<array>
 		<string>../.gitignore</string>
+		
+		<string>main.m:import:___VARIABLE_classPrefix:identifier___AppDelegate.h</string>
+		<string>main.m:main:UIApplicationMain</string>
+
+		<string>___PACKAGENAME___-Prefix.pch:objC:importFoundation</string>
 		<string>___PACKAGENAME___-Prefix.pch:Availability:iPhoneAvailability:5</string>
+		
+		<string>___PACKAGENAME___-Info.plist:iPhone</string>
+		<string>___PACKAGENAME___-Info.plist:NSMainNibFile</string>
 		<string>___PACKAGENAME___-Info.plist:UIMainStoryboardFile</string>
+		<string>___PACKAGENAME___-Info.plist:UISupportedInterfaceOrientations~iPhone</string>
+		<string>___PACKAGENAME___-Info.plist:UISupportedInterfaceOrientations~iPad</string>
+		
+		<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:comments</string>
+		<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:import:importCocoa</string>
+		<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:class</string>
+		<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:ivars</string>
+		<string>___VARIABLE_classPrefix:identifier___AppDelegate.h:methods:window</string>
+		<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:comments</string>
+		<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:import:___VARIABLE_classPrefix:identifier___AppDelegate.h</string>
+		<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation:dealloc:_window</string>
+		<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationdidFinishLaunchingWithOptions:setup</string>
+		<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillResignActive:comments</string>
+		<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationDidEnterBackground:comments</string>
+		<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillEnterForeground:comments</string>
+		<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationDidBecomeActive:comments</string>
+		<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillTerminate:comments</string>
+		
 		<string>en.lproj/MainStoryboard_iPhone.storyboard</string>
 		<string>en.lproj/MainStoryboard_iPad.storyboard</string>
 		<string>Default.png</string>
@@ -184,6 +426,8 @@
 		<string>Icon-small@2x.png</string>
 		<string>Icon-small.png</string>
 		<string>appearance.json</string>
+		
+
 	</array>
 	
 	<key>Options</key>
@@ -294,6 +538,39 @@ end
 	</array>
 	<key>SortOrder</key>
 	<integer>1</integer>
+	
+	<key>Project</key>
+	<dict>
+		<key>Configurations</key>
+		<dict>
+			<key>Release</key>
+			<dict>
+				<key>OTHER_CFLAGS</key>
+				<string>-DNS_BLOCK_ASSERTIONS=1</string>
+			</dict>
+		</dict>
+		<key>SharedSettings</key>
+		<dict>
+			<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+			<string>iPhone Developer</string>
+			<key>TARGETED_DEVICE_FAMILY</key>
+			<string>1,2</string>
+		</dict>
+	</dict>
+	
+	
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Frameworks</key>
+			<array>
+				<string>UIKit</string>
+				<string>Foundation</string>
+				<string>CoreGraphics</string>
+			</array>
+		</dict>
+	</array>
+	
 	
 </dict>
 </plist>
