@@ -282,12 +282,12 @@
 &lt;string&gt;MainStoryboard_iPhone&lt;/string&gt;
 &lt;key&gt;UIMainStoryboardFile~ipad&lt;/key&gt;
 &lt;string&gt;MainStoryboard_iPad&lt;/string&gt;</string>
-		<key>en.lproj/MainStoryboard_iPad.storyboard</key>
+		<key>MainStoryboard_iPad.storyboard</key>
 		<dict>
 			<key>Path</key>
 			<string>MainStoryboard_iPad.storyboard</string>
 		</dict>
-		<key>en.lproj/MainStoryboard_iPhone.storyboard</key>
+		<key>MainStoryboard_iPhone.storyboard</key>
 		<dict>
 			<key>Path</key>
 			<string>MainStoryboard_iPhone.storyboard</string>
@@ -409,8 +409,8 @@
 		<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationDidBecomeActive:comments</string>
 		<string>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillTerminate:comments</string>
 		
-		<string>en.lproj/MainStoryboard_iPhone.storyboard</string>
-		<string>en.lproj/MainStoryboard_iPad.storyboard</string>
+		<string>MainStoryboard_iPhone.storyboard</string>
+		<string>MainStoryboard_iPad.storyboard</string>
 		<string>Default.png</string>
 		<string>Default@2x.png</string>
 		<string>Default-568h@2x.png</string>
@@ -434,56 +434,6 @@
 	<array>
 		
 		<dict>
-			<!-- Ask to include KIF setup -->
-			<key>Default</key>
-			<string>true</string>
-			<key>Description</key>
-			<string>Whether the new project should integrate KIF</string>
-			<key>Identifier</key>
-			<string>useNSBoilerplateKIF</string>
-			<key>Name</key>
-			<string>Include User Interface Testing</string>
-			<key>SortOrder</key>
-			<integer>2147483647</integer>
-			<key>Type</key>
-			<string>checkbox</string>
-			<key>Units</key>
-			<dict>
-				<key>false</key>
-				<array>
-				</array>
-				<key>true</key>
-				<array>
-					<dict>
-						<key>Definitions</key>
-						<dict>
-							<key>../Podfile:kif</key>
-							<string>
-target :KIFTests, :exclusive => false do
-    pod 'KIF'
-end
-							</string>
-            			</dict>
-						<key>Nodes</key>
-						<array>
-							<string>../Podfile:kif</string>
-						</array>
-						<key>Components</key>
-						<array>
-							<dict>
-								<key>Identifier</key>
-								<string>com.nsboilerplate.template.project.KIFTestsBundle</string>
-								<key>Name</key>
-								<string>KIFTests</string>
-							</dict>
-						</array>
-					</dict>
-				</array>
-			</dict>
-		</dict>
-
-
-<dict>
 		    <!-- Ask to include Kiwi setup -->
 			<key>Default</key>
 			<string>true</string>
@@ -494,7 +444,7 @@ end
 			<key>Name</key>
 			<string>Include Kiwi Unit Testing</string>
 			<key>SortOrder</key>
-			<integer>2147483647</integer>
+			<integer>2000</integer>
 			<key>Type</key>
 			<string>checkbox</string>
 			<key>Units</key>
@@ -533,7 +483,98 @@ end
 				</array>
 			</dict>
 		</dict>
+		
+		<dict>
+			<!-- Ask to include KIF setup -->
+			<key>Default</key>
+			<string>true</string>
+			<key>Description</key>
+			<string>Whether the new project should integrate KIF</string>
+			<key>Identifier</key>
+			<string>useNSBoilerplateKIF</string>
+			<key>Name</key>
+			<string>Include User Interface Testing</string>
+			<key>SortOrder</key>
+			<integer>3000</integer>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Units</key>
+			<dict>
+				<key>false</key>
+				<array>
+				</array>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>../Podfile:kif</key>
+							<string>
+target :KIFTests, :exclusive => false do
+    pod 'KIF'
+end
+							</string>
+            			</dict>
+						<key>Nodes</key>
+						<array>
+							<string>../Podfile:kif</string>
+						</array>
+						<key>Components</key>
+						<array>
+							<dict>
+								<key>Identifier</key>
+								<string>com.nsboilerplate.template.project.KIFTestsBundle</string>
+								<key>Name</key>
+								<string>KIFTests</string>
+							</dict>
+						</array>
+					</dict>
+				</array>
+			</dict>
+		</dict>
 
+		<dict>
+		    <!-- Ask to include Documentation setup -->
+			<key>Default</key>
+			<string>true</string>
+			<key>Description</key>
+			<string>Whether the new project should integrate documentation generation</string>
+			<key>Identifier</key>
+			<string>useNSBoilerplateDocumentation</string>
+			<key>Name</key>
+			<string>Include Documentation Generation</string>
+			<key>SortOrder</key>
+			<integer>4000</integer>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Units</key>
+			<dict>
+				<key>false</key>
+				<array>
+				    <!-- nothing -->
+				</array>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+						</dict>
+                        <key>Nodes</key>
+                        <array>
+                        </array>
+						<key>Components</key>
+						<array>
+							<dict>
+								<key>Identifier</key>
+								<string>com.nsboilerplate.template.project.DocumentationBundle</string>
+								<key>Name</key>
+								<string>Documentation</string>
+							</dict>
+						</array>
+					</dict>
+				</array>
+			</dict>
+		</dict>
 
 	</array>
 	<key>SortOrder</key>

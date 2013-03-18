@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Identifier</key>
+	<string>com.nsboilerplate.template.project.DocumentationBundle</string>
+	
+	<key>Name</key>
+	<string>Documentation</string>
+	
+	<key>Description</key>
+	<string>NSBoilerplate Documentation template.</string>
+	
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	
+	<key>TargetOnly</key>
+	<true/>
+	
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.base</string>
+		<string>com.apple.dt.unit.macBase</string>
+	</array>
+    
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>TargetType</key>
+			<string>Legacy</string>
+			<key>BuildToolPath</key>
+			<string>/bin/sh</string>
+			<key>BuildToolArgsString</key>
+			<string>documentation.sh</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>OTHER_CFLAGS</key>
+				<string></string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+			</dict>
+			<key>Configurations</key>
+			<dict>
+				<key>Debug</key>
+				<dict>
+					<key>DEBUGGING_SYMBOLS</key>
+					<string>YES</string>
+					<key>GCC_GENERATE_DEBUGGING_SYMBOLS</key>
+					<string>YES</string>
+					<key>GCC_OPTIMIZATION_LEVEL</key>
+					<string>0</string>
+				</dict>
+				<key>Release</key>
+				<dict/>
+			</dict>
+		</dict>
+	</array>
+					
+</dict>
+</plist>
